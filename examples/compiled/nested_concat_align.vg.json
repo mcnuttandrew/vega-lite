@@ -12,7 +12,7 @@
         {
           "type": "extent",
           "field": "Worldwide_Gross",
-          "signal": "child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_extent"
+          "signal": "column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_extent"
         },
         {
           "type": "bin",
@@ -21,16 +21,16 @@
             "bin_maxbins_20_Worldwide_Gross",
             "bin_maxbins_20_Worldwide_Gross_end"
           ],
-          "signal": "child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins",
+          "signal": "column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins",
           "extent": {
-            "signal": "child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_extent"
+            "signal": "column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_extent"
           },
           "maxbins": 20
         },
         {
           "type": "extent",
           "field": "Rotten_Tomatoes_Rating",
-          "signal": "child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_extent"
+          "signal": "column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_extent"
         },
         {
           "type": "bin",
@@ -39,16 +39,16 @@
             "bin_maxbins_20_Rotten_Tomatoes_Rating",
             "bin_maxbins_20_Rotten_Tomatoes_Rating_end"
           ],
-          "signal": "child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins",
+          "signal": "column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins",
           "extent": {
-            "signal": "child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_extent"
+            "signal": "column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_extent"
           },
           "maxbins": 20
         },
         {
           "type": "extent",
           "field": "IMDB_Rating",
-          "signal": "child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_extent"
+          "signal": "column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_extent"
         },
         {
           "type": "bin",
@@ -57,24 +57,24 @@
             "bin_maxbins_20_IMDB_Rating",
             "bin_maxbins_20_IMDB_Rating_end"
           ],
-          "signal": "child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins",
+          "signal": "column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins",
           "extent": {
-            "signal": "child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_extent"
+            "signal": "column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_extent"
           },
           "maxbins": 20
         },
         {
           "type": "extent",
           "field": "US_Gross",
-          "signal": "child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_extent"
+          "signal": "column_US_Gross_bin_maxbins_20_US_Gross_extent"
         },
         {
           "type": "bin",
           "field": "US_Gross",
           "as": ["bin_maxbins_20_US_Gross", "bin_maxbins_20_US_Gross_end"],
-          "signal": "child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_bins",
+          "signal": "column_US_Gross_bin_maxbins_20_US_Gross_bins",
           "extent": {
-            "signal": "child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_extent"
+            "signal": "column_US_Gross_bin_maxbins_20_US_Gross_extent"
           },
           "maxbins": 20
         }
@@ -174,7 +174,7 @@
       "marks": [
         {
           "type": "group",
-          "name": "child__repeat_column_Rotten_Tomatoes_Rating_group",
+          "name": "column_Rotten_Tomatoes_Rating_group",
           "style": "cell",
           "encode": {
             "update": {
@@ -184,7 +184,7 @@
           },
           "marks": [
             {
-              "name": "child__repeat_column_Rotten_Tomatoes_Rating_marks",
+              "name": "column_Rotten_Tomatoes_Rating_marks",
               "type": "rect",
               "style": ["bar"],
               "from": {"data": "data_1"},
@@ -197,7 +197,7 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_Rotten_Tomatoes_Rating_x",
+                      "scale": "column_Rotten_Tomatoes_Rating_x",
                       "field": "bin_maxbins_20_Rotten_Tomatoes_Rating",
                       "offset": 1
                     }
@@ -208,27 +208,24 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_Rotten_Tomatoes_Rating_x",
+                      "scale": "column_Rotten_Tomatoes_Rating_x",
                       "field": "bin_maxbins_20_Rotten_Tomatoes_Rating_end"
                     }
                   ],
                   "y": {
-                    "scale": "child__repeat_column_Rotten_Tomatoes_Rating_y",
+                    "scale": "column_Rotten_Tomatoes_Rating_y",
                     "field": "__count"
                   },
-                  "y2": {
-                    "scale": "child__repeat_column_Rotten_Tomatoes_Rating_y",
-                    "value": 0
-                  }
+                  "y2": {"scale": "column_Rotten_Tomatoes_Rating_y", "value": 0}
                 }
               }
             }
           ],
           "axes": [
             {
-              "scale": "child__repeat_column_Rotten_Tomatoes_Rating_y",
+              "scale": "column_Rotten_Tomatoes_Rating_y",
               "orient": "left",
-              "gridScale": "child__repeat_column_Rotten_Tomatoes_Rating_x",
+              "gridScale": "column_Rotten_Tomatoes_Rating_x",
               "grid": true,
               "tickCount": {"signal": "ceil(concat_0_childHeight/40)"},
               "domain": false,
@@ -239,7 +236,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_Rotten_Tomatoes_Rating_x",
+              "scale": "column_Rotten_Tomatoes_Rating_x",
               "orient": "bottom",
               "grid": false,
               "title": "Rotten_Tomatoes_Rating (binned)",
@@ -249,7 +246,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_Rotten_Tomatoes_Rating_y",
+              "scale": "column_Rotten_Tomatoes_Rating_y",
               "orient": "left",
               "grid": false,
               "title": "Count",
@@ -261,7 +258,7 @@
         },
         {
           "type": "group",
-          "name": "child__repeat_column_IMDB_Rating_group",
+          "name": "column_IMDB_Rating_group",
           "style": "cell",
           "encode": {
             "update": {
@@ -271,7 +268,7 @@
           },
           "marks": [
             {
-              "name": "child__repeat_column_IMDB_Rating_marks",
+              "name": "column_IMDB_Rating_marks",
               "type": "rect",
               "style": ["bar"],
               "from": {"data": "data_2"},
@@ -284,7 +281,7 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_IMDB_Rating_x",
+                      "scale": "column_IMDB_Rating_x",
                       "field": "bin_maxbins_20_IMDB_Rating",
                       "offset": 1
                     }
@@ -295,27 +292,21 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_IMDB_Rating_x",
+                      "scale": "column_IMDB_Rating_x",
                       "field": "bin_maxbins_20_IMDB_Rating_end"
                     }
                   ],
-                  "y": {
-                    "scale": "child__repeat_column_IMDB_Rating_y",
-                    "field": "__count"
-                  },
-                  "y2": {
-                    "scale": "child__repeat_column_IMDB_Rating_y",
-                    "value": 0
-                  }
+                  "y": {"scale": "column_IMDB_Rating_y", "field": "__count"},
+                  "y2": {"scale": "column_IMDB_Rating_y", "value": 0}
                 }
               }
             }
           ],
           "axes": [
             {
-              "scale": "child__repeat_column_IMDB_Rating_y",
+              "scale": "column_IMDB_Rating_y",
               "orient": "left",
-              "gridScale": "child__repeat_column_IMDB_Rating_x",
+              "gridScale": "column_IMDB_Rating_x",
               "grid": true,
               "tickCount": {"signal": "ceil(concat_0_childHeight/40)"},
               "domain": false,
@@ -326,7 +317,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_IMDB_Rating_x",
+              "scale": "column_IMDB_Rating_x",
               "orient": "bottom",
               "grid": false,
               "title": "IMDB_Rating (binned)",
@@ -336,7 +327,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_IMDB_Rating_y",
+              "scale": "column_IMDB_Rating_y",
               "orient": "left",
               "grid": false,
               "title": "Count",
@@ -356,7 +347,7 @@
       "marks": [
         {
           "type": "group",
-          "name": "child__repeat_column_US_Gross_group",
+          "name": "column_US_Gross_group",
           "style": "cell",
           "encode": {
             "update": {
@@ -366,7 +357,7 @@
           },
           "marks": [
             {
-              "name": "child__repeat_column_US_Gross_marks",
+              "name": "column_US_Gross_marks",
               "type": "rect",
               "style": ["bar"],
               "from": {"data": "data_3"},
@@ -379,7 +370,7 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_US_Gross_x",
+                      "scale": "column_US_Gross_x",
                       "field": "bin_maxbins_20_US_Gross",
                       "offset": 1
                     }
@@ -390,24 +381,21 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_US_Gross_x",
+                      "scale": "column_US_Gross_x",
                       "field": "bin_maxbins_20_US_Gross_end"
                     }
                   ],
-                  "y": {
-                    "scale": "child__repeat_column_US_Gross_y",
-                    "field": "__count"
-                  },
-                  "y2": {"scale": "child__repeat_column_US_Gross_y", "value": 0}
+                  "y": {"scale": "column_US_Gross_y", "field": "__count"},
+                  "y2": {"scale": "column_US_Gross_y", "value": 0}
                 }
               }
             }
           ],
           "axes": [
             {
-              "scale": "child__repeat_column_US_Gross_y",
+              "scale": "column_US_Gross_y",
               "orient": "left",
-              "gridScale": "child__repeat_column_US_Gross_x",
+              "gridScale": "column_US_Gross_x",
               "grid": true,
               "tickCount": {"signal": "ceil(concat_1_childHeight/40)"},
               "domain": false,
@@ -418,7 +406,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_US_Gross_x",
+              "scale": "column_US_Gross_x",
               "orient": "bottom",
               "grid": false,
               "title": "US_Gross (binned)",
@@ -428,7 +416,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_US_Gross_y",
+              "scale": "column_US_Gross_y",
               "orient": "left",
               "grid": false,
               "title": "Count",
@@ -440,7 +428,7 @@
         },
         {
           "type": "group",
-          "name": "child__repeat_column_Worldwide_Gross_group",
+          "name": "column_Worldwide_Gross_group",
           "style": "cell",
           "encode": {
             "update": {
@@ -450,7 +438,7 @@
           },
           "marks": [
             {
-              "name": "child__repeat_column_Worldwide_Gross_marks",
+              "name": "column_Worldwide_Gross_marks",
               "type": "rect",
               "style": ["bar"],
               "from": {"data": "data_0"},
@@ -463,7 +451,7 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_Worldwide_Gross_x",
+                      "scale": "column_Worldwide_Gross_x",
                       "field": "bin_maxbins_20_Worldwide_Gross",
                       "offset": 1
                     }
@@ -474,27 +462,24 @@
                       "value": 0
                     },
                     {
-                      "scale": "child__repeat_column_Worldwide_Gross_x",
+                      "scale": "column_Worldwide_Gross_x",
                       "field": "bin_maxbins_20_Worldwide_Gross_end"
                     }
                   ],
                   "y": {
-                    "scale": "child__repeat_column_Worldwide_Gross_y",
+                    "scale": "column_Worldwide_Gross_y",
                     "field": "__count"
                   },
-                  "y2": {
-                    "scale": "child__repeat_column_Worldwide_Gross_y",
-                    "value": 0
-                  }
+                  "y2": {"scale": "column_Worldwide_Gross_y", "value": 0}
                 }
               }
             }
           ],
           "axes": [
             {
-              "scale": "child__repeat_column_Worldwide_Gross_y",
+              "scale": "column_Worldwide_Gross_y",
               "orient": "left",
-              "gridScale": "child__repeat_column_Worldwide_Gross_x",
+              "gridScale": "column_Worldwide_Gross_x",
               "grid": true,
               "tickCount": {"signal": "ceil(concat_1_childHeight/40)"},
               "domain": false,
@@ -505,7 +490,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_Worldwide_Gross_x",
+              "scale": "column_Worldwide_Gross_x",
               "orient": "bottom",
               "grid": false,
               "title": "Worldwide_Gross (binned)",
@@ -515,7 +500,7 @@
               "zindex": 0
             },
             {
-              "scale": "child__repeat_column_Worldwide_Gross_y",
+              "scale": "column_Worldwide_Gross_y",
               "orient": "left",
               "grid": false,
               "title": "Count",
@@ -530,19 +515,19 @@
   ],
   "scales": [
     {
-      "name": "child__repeat_column_Rotten_Tomatoes_Rating_x",
+      "name": "column_Rotten_Tomatoes_Rating_x",
       "type": "linear",
       "domain": {
-        "signal": "[child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins.start, child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins.stop]"
+        "signal": "[column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins.start, column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins.stop]"
       },
       "range": [0, {"signal": "concat_0_childWidth"}],
       "bins": {
-        "signal": "child__repeat_column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins"
+        "signal": "column_Rotten_Tomatoes_Rating_bin_maxbins_20_Rotten_Tomatoes_Rating_bins"
       },
       "zero": false
     },
     {
-      "name": "child__repeat_column_Rotten_Tomatoes_Rating_y",
+      "name": "column_Rotten_Tomatoes_Rating_y",
       "type": "linear",
       "domain": {"data": "data_1", "field": "__count"},
       "range": [{"signal": "concat_0_childHeight"}, 0],
@@ -550,19 +535,17 @@
       "zero": true
     },
     {
-      "name": "child__repeat_column_IMDB_Rating_x",
+      "name": "column_IMDB_Rating_x",
       "type": "linear",
       "domain": {
-        "signal": "[child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins.start, child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins.stop]"
+        "signal": "[column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins.start, column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins.stop]"
       },
       "range": [0, {"signal": "concat_0_childWidth"}],
-      "bins": {
-        "signal": "child__repeat_column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins"
-      },
+      "bins": {"signal": "column_IMDB_Rating_bin_maxbins_20_IMDB_Rating_bins"},
       "zero": false
     },
     {
-      "name": "child__repeat_column_IMDB_Rating_y",
+      "name": "column_IMDB_Rating_y",
       "type": "linear",
       "domain": {"data": "data_2", "field": "__count"},
       "range": [{"signal": "concat_0_childHeight"}, 0],
@@ -570,19 +553,17 @@
       "zero": true
     },
     {
-      "name": "child__repeat_column_US_Gross_x",
+      "name": "column_US_Gross_x",
       "type": "linear",
       "domain": {
-        "signal": "[child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_bins.start, child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_bins.stop]"
+        "signal": "[column_US_Gross_bin_maxbins_20_US_Gross_bins.start, column_US_Gross_bin_maxbins_20_US_Gross_bins.stop]"
       },
       "range": [0, {"signal": "concat_1_childWidth"}],
-      "bins": {
-        "signal": "child__repeat_column_US_Gross_bin_maxbins_20_US_Gross_bins"
-      },
+      "bins": {"signal": "column_US_Gross_bin_maxbins_20_US_Gross_bins"},
       "zero": false
     },
     {
-      "name": "child__repeat_column_US_Gross_y",
+      "name": "column_US_Gross_y",
       "type": "linear",
       "domain": {"data": "data_3", "field": "__count"},
       "range": [{"signal": "concat_1_childHeight"}, 0],
@@ -590,19 +571,19 @@
       "zero": true
     },
     {
-      "name": "child__repeat_column_Worldwide_Gross_x",
+      "name": "column_Worldwide_Gross_x",
       "type": "linear",
       "domain": {
-        "signal": "[child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins.start, child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins.stop]"
+        "signal": "[column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins.start, column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins.stop]"
       },
       "range": [0, {"signal": "concat_1_childWidth"}],
       "bins": {
-        "signal": "child__repeat_column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins"
+        "signal": "column_Worldwide_Gross_bin_maxbins_20_Worldwide_Gross_bins"
       },
       "zero": false
     },
     {
-      "name": "child__repeat_column_Worldwide_Gross_y",
+      "name": "column_Worldwide_Gross_y",
       "type": "linear",
       "domain": {"data": "data_0", "field": "__count"},
       "range": [{"signal": "concat_1_childHeight"}, 0],
